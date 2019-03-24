@@ -1,0 +1,3 @@
+AJAX - Asysnchronous Javascript And XML
+Ajax allows web pages to be updated asynchronously by exchanging data with a web.
+server behind the scenes. It is possible to update parts of a web page without reloading whole page.

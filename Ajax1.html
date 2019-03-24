@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajax First Demo</title>
+</head>
+<body>
+	<h2>The XML Object</h2>
+	<p id="demo">Ajax change this text.</p>
+	<button type="button" onclick="loadDoc()">Click here</button>
+
+	<script type="text/javascript">
+		function loadDoc()
+		{
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function(){
+				if (this.readystate == 4 && this.status == 200) {
+					document.getElementById('demo').innerHTML = this.responseText;
+				}
+			};
+			xhttp.open("GET","gethint.php",true);
+			//xhttp.open("GET","ajax_info.txt"  + Math.random(),true);
+			//xhttp.open("GET","ajax_info.asp?fname=Henry&lname=Ford",true);
+			xhttp.send();
+		}
+	</script>
+</body>
+</html>

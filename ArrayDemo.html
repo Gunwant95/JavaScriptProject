@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Demo</title>
+</head>
+<body>
+	<p id="Demo"></p>
+	<script type="text/javascript">
+		var cars=['maruti','suzuki','duster'];
+		document.getElementById('Demo').innerHTML=cars[1];
+
+		var fruits,text;
+		fruits = ['Banana','orange','Apple','Mango'];
+		text = '<ul>';
+		fruits.forEach(myFunc);
+		text += "</ul>";
+		document.getElementById('Demo').innerHTML = text;
+
+		function myFunc(value)
+		{
+			text += "<li>" + value + "</li>";
+		}
+	</script>
+</body>
+</html>

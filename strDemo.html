@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Function</title>
+</head>
+<body>
+	<h1>String Demo</h1>
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<p id="demo6"></p>
+	<p id="demo7"></p>
+	<p id="demo8"></p>
+	<p id="demo9"></p>
+
+	<script type="text/javascript">
+		var str = "Apple,banana,locate,mango,'\locate\',Kiwi";
+		var res = str.length;
+		var res1 = str.indexOf("locate");
+		var res2 = str.lastIndexOf("locate");
+		var res3 = str.slice(7,13);
+		var res4 = str.search("locate");
+		var res5 = str.indexOf("locate",10);
+		var res6 = str.lastIndexOf("locate",20);
+		var res7 = str.substring(7,13);
+		var res8 = str.substr(7,13);
+
+		document.getElementById('demo').innerHTML = str;
+		document.getElementById('demo1').innerHTML = res;
+		document.getElementById('demo2').innerHTML = res1;
+		document.getElementById('demo3').innerHTML = res2;
+		document.getElementById('demo4').innerHTML = res3;
+		document.getElementById('demo5').innerHTML = res4;
+		document.getElementById('demo6').innerHTML = res5;
+		document.getElementById('demo7').innerHTML = res6;
+		document.getElementById('demo8').innerHTML = res7;
+		document.getElementById('demo9').innerHTML = res8;
+	</script>
+
+</body>
+</html>

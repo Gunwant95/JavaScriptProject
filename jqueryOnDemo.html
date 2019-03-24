@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My On method Demo</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("p").on({
+				mouseenter:function(){
+			$(this).css("background-color","lightgray");
+		},
+		mouseleave:function(){
+			$(this).css("background-color","lightBlue");
+		},
+		click:function(){
+			$(this).css("background-color","yellow");
+		}
+			});
+		});
+	</script>
+</head>
+<body>
+	<p>Click me or mouse over me and see changes.</p>
+</body>
+</html>

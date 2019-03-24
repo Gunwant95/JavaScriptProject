@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Input Focus Demo</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("input").focus(function(){
+				$(this).css("background-color","#cccccc");
+			});
+
+			$("input").blur(function(){
+				$(this).css("background-color","#ffffff");
+			});
+		});
+	</script>
+</head>
+<body>
+	Name :&nbsp&nbsp<input type="text" name="Name"></br>
+	Password :<input type="text" name="Pass"><br>
+
+	<p>Submit Now</p>
+</body>
+</html>

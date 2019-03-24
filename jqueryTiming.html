@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hide and Show Demo</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#bt").click(function(){
+				$("p").hide(1000);
+			});
+		$("#btn").click(function(){
+			$("p").show("fast");
+		});
+
+		$("#tog").click(function(){
+			$("p").toggle("1000");
+		});
+		});
+	</script>
+</head>
+<body>
+	<p>I am a paragraph</p>
+	<p>I am another</p>
+	<button  id="bt">Click Me</button>
+	<button id="btn">Show Me</button>
+	<button id = "tog"> Toggle</button>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date Functions</title>
+</head>
+<body>
+	<h1>Date functions</h1>
+	<button onclick="fun()">Click here</button>
+	<p id="Demo"></p>
+	<p id="Demo1"></p>
+	<p id="Demo2"></p>
+	<p id='Demo3'></p>
+	<p id='Demo4'></p>
+	<script type="text/javascript">
+		function fun()
+		{
+			var d = new Date();
+			document.getElementById('Demo').innerHTML=d;
+			//document.write('Hello dear');
+			var d1=d.getYear();
+			var d2 = d.getMonth();
+			d.setFullYear(2020);
+			document.getElementById('Demo4').innerHTML=d;
+			//d.getUTCDate();
+			var days = ["sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			document.getElementById('Demo1').innerHTML=d1;
+			document.getElementById('Demo2').innerHTML=d2;
+			document.getElementById('Demo3').innerHTML=days[d.getDay()];
+		}
+	</script>
+</body>
+</html>

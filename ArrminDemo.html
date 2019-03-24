@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Demo</title>
+</head>
+<body>
+	<p id="Demo"></p>
+	<button onclick="MinF()"
+	>Min value</button>
+	<script type="text/javascript">
+		var arr = [10,2,100,-3,44,5];
+		//document.getElementById('Demo').innerHTML = 
+		function MinF(arr)
+		{
+			var len = arr.length;
+			var min = Infinity;
+			while(len--)
+			{
+				if(min>arr[len])
+				{
+					min = arr[len];
+				}
+			} 
+			document.getElementById('Demo').innerHTML = arr;
+	//	}
+	</script>
+</body>
+</html>

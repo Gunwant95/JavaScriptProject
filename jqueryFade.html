@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fade Demo</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+			$("#div1").fadeIn();
+			$("#div2").fadeIn("slow");
+			$("#div3").fadeIn(4000);
+			$("#div4").fadeOut(5000);
+			$("#div5").fadeToggle(6000);
+			$("#div6").fadeTo("slow",0.2);
+			});
+		});
+	</script>
+</head>
+<body>
+	<p>Demonstrate FadeIn</p>
+	<button>Click here</button>
+
+	<div id="div1" style="width:80px;height:80px;display: none;background-color: red;">Gunwant</div><br>
+	<div id="div2" style="width:80px;height:80px;display: none;background-color: blue;"></div><br>
+	<div id="div3" style="width:80px;height:80px;display: none;background-color: yellow;"></div><br>
+	<div id="div4" style="width:80px;height:80px;background-color: green;"></div><br>
+	<div id="div5" style="width:80px;height:80px;display: none;background-color: magenta;"></div><br>
+	<div id="div6" style="width:80px;height:80px;background-color: green"></div><br>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is select all Demo</title>
+	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				//$("*").hide();
+				//$(this).hide();
+				$("p.intro").hide();
+			});
+		});
+	</script>
+</head>
+<body>
+	<h2 class="intro">This is a heading</h2>
+	<p class="intro">This is a paragraph.</p>
+	<p>This is another paragraph.</p>
+	<button>Click here</button>
+</body>
+</html>

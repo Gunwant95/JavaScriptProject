@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exception Try catch Finally</title>
+</head>
+<body>
+	<p>Please input between 5 and 10</p>
+	<input type="text" name="ab" id="demo">
+	<button type="button" onclick="myfun()">Test input</button>
+	<p id="p1"></p>
+	<script type="text/javascript">
+		function myfun()
+		{
+			var message,x;
+			message = document.getElementById('p1')
+			message.innerHTML = "";
+			x = document.getElementById("demo").value;
+			try
+			{
+				if (x == "") { throw "is empty"; }
+				if (isNaN(x)) { throw "is not a number"; }
+				x = Number(x);
+				if (x>10) throw "is too high";
+				if (x<5) {throw "is too low"; }
+			}
+			catch(err)
+			{
+				message.innerHTML = "Input " + err;
+			}
+			finally
+			{
+				document.getElementById("demo").value = "";
+			}
+		}
+	</script>
+</body>
+</html>
